@@ -1,15 +1,13 @@
-import type { MutationTree } from 'vuex/types/index.js';
-
 export interface XP {
-    current: number;
-    start: number;
-    end: number;
+  current: number;
+  start: number;
+  end: number;
 }
 
 export interface Challenge {
-    type: string;
-    description: string;
-    amount: number;
+  type: string;
+  description: string;
+  amount: number;
 }
 
 export interface Cookie {
@@ -42,7 +40,7 @@ export enum Mutations {
 
 export type RootState = ReturnType<() => State>
 
-export interface MutationsInterface extends MutationTree<RootState> {
+export interface MutationsInterface extends RootState {
 	[Mutations.SET_CURRENT_CHALLENGE_INDEX] (s: State, p: number): void;
 	[Mutations.SET_IS_LEVEL_UP_MODAL_OPEN] (s: State, p: boolean): void;
 	[Mutations.COMPLETE_CHALLENGE] (s: State, p: number): void;

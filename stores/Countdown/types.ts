@@ -1,5 +1,3 @@
-import type { MutationTree } from 'vuex/types/index.js';
-
 export interface State {
   time: number;
   isActive: boolean;
@@ -20,7 +18,7 @@ export enum Mutations {
 
 export type RootState = ReturnType<() => State>
 
-export interface MutationsInterface extends MutationTree<RootState> {
+export interface MutationsInterface extends RootState {
   [Mutations.SET_TIME](s: State, p: number): void;
 	[Mutations.RESET_TIME](s: State): void;
 	[Mutations.SET_IS_ACTIVE](s: State, p: boolean): void;
