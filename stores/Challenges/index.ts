@@ -3,11 +3,11 @@ import type { State } from './types';
 import { defineStore } from 'pinia'
 import { Mutations, type MutationsInterface } from './types';
 
-export const useChallengesStore = defineStore('challenges', {
+export const useChallenges = defineStore('challenges', {
   state: (): State => ({
 		level: 1,
 		xp: {
-			current: 0,
+			current: 32,
 			start: 0,
 			end: 64,
 		},
