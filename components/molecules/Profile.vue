@@ -12,7 +12,5 @@
 </template>
 
 <script setup lang="ts">
-import { useChallenges } from '~/stores/Challenges/index'
-
 const { level } = useChallenges();
 </script>

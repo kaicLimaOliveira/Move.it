@@ -1,7 +1,14 @@
 import allChallenges from '@/assets/challenges/data';
-import type { State } from './types';
-import { defineStore } from 'pinia'
-import { Mutations, type MutationsInterface } from './types';
+import type { Challenge, Cookie, XP } from '~/interfaces/Generic';
+
+interface State {
+  level: number;
+  xp: XP;
+  completedChallenges: number;
+  currentChallengeIndex: number | null;
+  isLevelUpModalOpen: boolean;
+  allChallenges: Challenge[];
+}
 
 export const useChallenges = defineStore('challenges', {
   state: (): State => ({
@@ -28,44 +35,44 @@ export const useChallenges = defineStore('challenges', {
         : null,
   },
   actions: {
-    [Mutations.SET_CURRENT_CHALLENGE_INDEX] (state, index) {
-      state.currentChallengeIndex = index;
+    setCurrentChallengeIndex (index: number) {
+      this.currentChallengeIndex = index;
     },
-    [Mutations.SET_IS_LEVEL_UP_MODAL_OPEN] (state, flag) {
-      state.isLevelUpModalOpen = flag;
+    setIsLevelUpModalOpen (flag: boolean) {
+      this.isLevelUpModalOpen = flag;
     },
-    [Mutations.COMPLETE_CHALLENGE] (state, xpAmount) {
-      const { current, end } = state.xp;
+    completeChallenge (xpAmount: number) {
+      const { current, end } = this.xp;
       const currentTotalXP = current + xpAmount;
       const shouldLevelUp = currentTotalXP >= end;
   
-      state.completedChallenges += 1;
+      this.completedChallenges += 1;
   
       if (shouldLevelUp) {
-        state.level += 1;
+        this.level += 1;
   
         const remainingXp = currentTotalXP - end;
-        const experienceToNextLevel = Math.pow((state.level + 1) * 4, 2);
+        const experienceToNextLevel = Math.pow((this.level + 1) * 4, 2);
   
-        state.xp = {
+        this.xp = {
           current: remainingXp,
           start: 0,
           end: experienceToNextLevel,
         };
   
-        state.isLevelUpModalOpen = true;
+        this.isLevelUpModalOpen = true;
         return;
       }
   
-      state.xp = {
-        ...state.xp,
+      this.xp = {
+        ...this.xp,
         current: currentTotalXP,
       };
     },
-    [Mutations.SAVE_COOKIE_DATA] (state, cookie) {
-      state.level = cookie.level;
-      state.xp = cookie.xp;
-      state.completedChallenges = cookie.completedChallenges;
+    saveCookieData (cookie: Cookie) {
+      this.level = cookie.level;
+      this.xp = cookie.xp;
+      this.completedChallenges = cookie.completedChallenges;
     },
-  } as MutationsInterface
+  }
 })

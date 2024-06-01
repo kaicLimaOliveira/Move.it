@@ -10,7 +10,5 @@
 </template>
 
 <script setup lang="ts">
-import { useChallenges } from '~/stores/Challenges/index'
-
 const { completedChallenges } = useChallenges();
 </script>

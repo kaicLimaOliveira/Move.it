@@ -5,5 +5,11 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
   ],
-  pages: false,
+  css: [
+		'~/assets/css/global.css',
+		'~/assets/css/components.css',
+	],
+  pinia: {
+    storesDirs: ['./stores/**'],
+  },
 })
