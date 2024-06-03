@@ -17,5 +17,5 @@
 </template>
 
 <script setup lang="ts">
-const { xp, currentXpPercentage } = useChallenges();
+const { xp, currentXpPercentage } = storeToRefs(useChallenges());
 </script>

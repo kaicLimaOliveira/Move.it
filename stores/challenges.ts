@@ -35,13 +35,13 @@ export const useChallenges = defineStore('challenges', {
         : null,
   },
   actions: {
-    setCurrentChallengeIndex (index: number) {
+    setCurrentChallengeIndex (index: number | null) {
       this.currentChallengeIndex = index;
     },
     setIsLevelUpModalOpen (flag: boolean) {
       this.isLevelUpModalOpen = flag;
     },
-    completeChallenge (xpAmount: number) {
+    completedChallenge (xpAmount: number) {
       const { current, end } = this.xp;
       const currentTotalXP = current + xpAmount;
       const shouldLevelUp = currentTotalXP >= end;

@@ -10,7 +10,7 @@
         disabled
         class="button completed"
       >
-        Cycle completed
+        Ciclo completo
       </button>
 
       <button
@@ -18,7 +18,7 @@
         class="button abandon"
         @click="setCountdownState(false)"
       >
-        Abandon cycle
+        Abandonar ciclo
       </button>
 
       <button
@@ -26,13 +26,16 @@
         class="button start"
         @click="setCountdownState(true)"
       >
-        Start a cycle
+        Iniciar ciclo
       </button>
     </div>
+
+    <Card id="challenge" class="w-full lg:w-1/2" />
   </section>
 </template>
 
 <script setup lang="ts">
+import Card from '~/components/organisms/Card.vue';
 import CompletedChallenges from '~/components/atoms/CompletedChallenges.vue';
 import Countdown from '~/components/molecules/Countdown.vue';
 import Profile from '~/components/molecules/Profile.vue';
@@ -40,26 +43,39 @@ import Profile from '~/components/molecules/Profile.vue';
 const { setHasCompleted, setIsActive } = useCountdown();
 const { isActive, hasCompleted } = storeToRefs(useCountdown());
 
+const { setCurrentChallengeIndex } = useChallenges();
+const { challengesLength } = storeToRefs(useChallenges());
+
+
 useSeoMeta({
   title: "Home | move.it",
 })
 
+
 onMounted(() => {
   if ('Notification' in window) {
-    Notification.requestPermission()
+    Notification.requestPermission();
   }
 }) 
 
+const challenge = ref('');
+
 function getNewChallenge() {
-  setHasCompleted(true)
+  const index = getRandomNumber(0, challengesLength.value);
+  setHasCompleted(true);
+  setCurrentChallengeIndex(index);
 
   if (Notification?.permission === 'granted') {
-    playAudio('./notification.mp3')
+    playAudio('./notification.mp3');
     sendNotification('New Challenge!', {
       body: 'A new challenge has started! Go complete it!',
       icon: './favicon.png'
-    })
+    });
   }
+
+  nextTick(() => {
+    scrollToElement('#challenge')
+  })
 }
 
 function setCountdownState(flag: boolean) {
