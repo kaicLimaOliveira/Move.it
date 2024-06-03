@@ -4,7 +4,7 @@ interface State {
   hasCompleted: boolean;
 }
 
-const MINUTES = 0.05;
+const MINUTES = 25;
 
 export const useCountdown = defineStore('countdown', {
   state: (): State => ({
