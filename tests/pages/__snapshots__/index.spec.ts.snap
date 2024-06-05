@@ -1,0 +1,117 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`page index > Snapshots >  1`] = `
+"<section class="flex flex-col lg:flex-row flex-1 lg:flex-none lg:mt-16 sm:gap-x-10 md:gap-x-20">
+  <div class="flex flex-col w-full lg:w-1/2">
+    <div class="flex items-center"><img src="https://github.com/kaicLimaOliveira.png" alt="Kaic Dev" class="mr-6 w-20 h-20 rounded-full">
+      <div class="flex flex-col w-full"><strong class="text-title text-2xl">Kaic Dev</strong>
+        <p class="flex items-center"><img src="/icons/level.svg" alt="level" class="mr-2"><span class="text-base">Level 1</span></p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center pb-5 border-b-2 border-gray-line mt-8 lg:mt-14 font-medium">
+      <p class="text-lg"> Desafios Completos </p>
+      <p class="text-2xl">0</p>
+    </div>
+    <div class="flex justify-center items-center mt-8 lg:mt-14 text-9xl text-title font-rajdhani">
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p><span class="bg-background px-2">:</span>
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p>
+    </div><button class="button start"> Iniciar ciclo </button>
+  </div>
+  <div class="bg-white rounded-md flex flex-1 w-full mt-8 lg:mt-0 shadow-sm w-full lg:w-1/2" id="challenge">
+    <section class="flex flex-col flex-1 justify-center items-center p-10 md:p-16">
+      <h1 class="font-medium text-center text-2xl"> Finalize um ciclo para receber um desafio </h1><img src="/icons/level-up.svg" alt="Level up" class="mt-10 md:mt-16 min-h-[70px]">
+      <p class="text-center mt-4"> Avance de Level completando desafios </p>
+    </section>
+    <transition-stub data-v-68482f27="" name="slide-fade" appear="false" persisted="false" css="true">
+      <!--v-if-->
+    </transition-stub>
+  </div>
+</section>"
+`;
+
+exports[`page index > Snapshots > should render all child components and abandon cycle button 1`] = `
+"<section class="flex flex-col lg:flex-row flex-1 lg:flex-none lg:mt-16 sm:gap-x-10 md:gap-x-20">
+  <div class="flex flex-col w-full lg:w-1/2">
+    <div class="flex items-center"><img src="https://github.com/kaicLimaOliveira.png" alt="Kaic Dev" class="mr-6 w-20 h-20 rounded-full">
+      <div class="flex flex-col w-full"><strong class="text-title text-2xl">Kaic Dev</strong>
+        <p class="flex items-center"><img src="/icons/level.svg" alt="level" class="mr-2"><span class="text-base">Level 1</span></p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center pb-5 border-b-2 border-gray-line mt-8 lg:mt-14 font-medium">
+      <p class="text-lg"> Desafios Completos </p>
+      <p class="text-2xl">0</p>
+    </div>
+    <div class="flex justify-center items-center mt-8 lg:mt-14 text-9xl text-title font-rajdhani">
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p><span class="bg-background px-2">:</span>
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p>
+    </div><button class="button abandon"> Abandonar ciclo </button>
+  </div>
+  <div class="bg-white rounded-md flex flex-1 w-full mt-8 lg:mt-0 shadow-sm w-full lg:w-1/2" id="challenge">
+    <section class="flex flex-col flex-1 justify-center items-center p-10 md:p-16">
+      <h1 class="font-medium text-center text-2xl"> Finalize um ciclo para receber um desafio </h1><img src="/icons/level-up.svg" alt="Level up" class="mt-10 md:mt-16 min-h-[70px]">
+      <p class="text-center mt-4"> Avance de Level completando desafios </p>
+    </section>
+    <transition-stub data-v-68482f27="" name="slide-fade" appear="false" persisted="false" css="true">
+      <!--v-if-->
+    </transition-stub>
+  </div>
+</section>"
+`;
+
+exports[`page index > Snapshots > should render all child components and abandon cycle button 2`] = `
+"<section class="flex flex-col lg:flex-row flex-1 lg:flex-none lg:mt-16 sm:gap-x-10 md:gap-x-20">
+  <div class="flex flex-col w-full lg:w-1/2">
+    <div class="flex items-center"><img src="https://github.com/kaicLimaOliveira.png" alt="Kaic Dev" class="mr-6 w-20 h-20 rounded-full">
+      <div class="flex flex-col w-full"><strong class="text-title text-2xl">Kaic Dev</strong>
+        <p class="flex items-center"><img src="/icons/level.svg" alt="level" class="mr-2"><span class="text-base">Level 1</span></p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center pb-5 border-b-2 border-gray-line mt-8 lg:mt-14 font-medium">
+      <p class="text-lg"> Desafios Completos </p>
+      <p class="text-2xl">0</p>
+    </div>
+    <div class="flex justify-center items-center mt-8 lg:mt-14 text-9xl text-title font-rajdhani">
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p><span class="bg-background px-2">:</span>
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p>
+    </div><button disabled="" class="button completed"> Ciclo completo </button>
+  </div>
+  <div class="bg-white rounded-md flex flex-1 w-full mt-8 lg:mt-0 shadow-sm w-full lg:w-1/2" id="challenge">
+    <section class="flex flex-col flex-1 justify-center items-center p-10 md:p-16">
+      <h1 class="font-medium text-center text-2xl"> Finalize um ciclo para receber um desafio </h1><img src="/icons/level-up.svg" alt="Level up" class="mt-10 md:mt-16 min-h-[70px]">
+      <p class="text-center mt-4"> Avance de Level completando desafios </p>
+    </section>
+    <transition-stub data-v-68482f27="" name="slide-fade" appear="false" persisted="false" css="true">
+      <!--v-if-->
+    </transition-stub>
+  </div>
+</section>"
+`;
+
+exports[`page index > Snapshots > should render all child components and start a cycle button 1`] = `
+"<section class="flex flex-col lg:flex-row flex-1 lg:flex-none lg:mt-16 sm:gap-x-10 md:gap-x-20">
+  <div class="flex flex-col w-full lg:w-1/2">
+    <div class="flex items-center"><img src="https://github.com/kaicLimaOliveira.png" alt="Kaic Dev" class="mr-6 w-20 h-20 rounded-full">
+      <div class="flex flex-col w-full"><strong class="text-title text-2xl">Kaic Dev</strong>
+        <p class="flex items-center"><img src="/icons/level.svg" alt="level" class="mr-2"><span class="text-base">Level 1</span></p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center pb-5 border-b-2 border-gray-line mt-8 lg:mt-14 font-medium">
+      <p class="text-lg"> Desafios Completos </p>
+      <p class="text-2xl">0</p>
+    </div>
+    <div class="flex justify-center items-center mt-8 lg:mt-14 text-9xl text-title font-rajdhani">
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p><span class="bg-background px-2">:</span>
+      <p class="w-1/2 flex gap-x-1"><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">m</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">o</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">c</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">k</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">d</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3"> </span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">s</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">p</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">i</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">t</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">V</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">a</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">l</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">u</span><span class="w-1/2 bg-white rounded-md flex items-center justify-center py-3">e</span></p>
+    </div><button class="button start"> Iniciar ciclo </button>
+  </div>
+  <div class="bg-white rounded-md flex flex-1 w-full mt-8 lg:mt-0 shadow-sm w-full lg:w-1/2" id="challenge">
+    <section class="flex flex-col flex-1 justify-center items-center p-10 md:p-16">
+      <h1 class="font-medium text-center text-2xl"> Finalize um ciclo para receber um desafio </h1><img src="/icons/level-up.svg" alt="Level up" class="mt-10 md:mt-16 min-h-[70px]">
+      <p class="text-center mt-4"> Avance de Level completando desafios </p>
+    </section>
+    <transition-stub data-v-68482f27="" name="slide-fade" appear="false" persisted="false" css="true">
+      <!--v-if-->
+    </transition-stub>
+  </div>
+</section>"
+`;

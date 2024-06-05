@@ -1,4 +1,4 @@
-import allChallenges from '@/assets/challenges/data';
+import allChallenges from '~/assets/challenges/data';
 import type { Challenge, Cookie, XP } from '~/interfaces/Generic';
 
 interface State {
@@ -14,7 +14,7 @@ export const useChallenges = defineStore('challenges', {
   state: (): State => ({
 		level: 1,
 		xp: {
-			current: 32,
+			current: 0,
 			start: 0,
 			end: 64,
 		},

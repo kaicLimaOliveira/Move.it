@@ -58,8 +58,6 @@ onMounted(() => {
   }
 }) 
 
-const challenge = ref('');
-
 function getNewChallenge() {
   const index = getRandomNumber(0, challengesLength.value);
   setHasCompleted(true);
